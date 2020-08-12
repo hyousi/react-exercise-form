@@ -71,7 +71,7 @@ export default class App extends Component {
             />
             I have read the terms of conduct
           </label>
-          <input type="submit" value="Submit"/>
+          <input type="submit" value="Submit" className="input-submit"/>
         </form>
       </>
     );
