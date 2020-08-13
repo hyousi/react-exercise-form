@@ -26,6 +26,7 @@ export default class App extends Component {
   };
 
   render() {
+    let validForm = this.state.name && this.state.gender && this.state.desc && this.state.agreement;
     return (
       <>
         <h1>My Profile</h1>
@@ -71,7 +72,7 @@ export default class App extends Component {
             />
             I have read the terms of conduct
           </label>
-          <input type="submit" value="Submit" className="input-submit"/>
+          <button type="submit" className="input-submit" disabled={!validForm}>Submit</button>
         </form>
       </>
     );
